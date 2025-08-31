@@ -9,7 +9,8 @@ import org.testng.asserts.SoftAssert;
 import utility.DateProvider;
 
 public class TC_RF_001 {
-    
+	
+	   
 	@Test
 	public void verifyRegisteringAccountWithMandatoryFields()
 	{
