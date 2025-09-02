@@ -3,15 +3,22 @@ package tutorialsninja.register;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class TC_RF_004_1
-{
+{   
+	WebDriver driver=null;
+	@AfterMethod
+	public void teardown()
+	{
+		driver.quit();
+	}
 	@Test
 	public void validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement()
 	{
-		  WebDriver driver= new ChromeDriver();
+		 driver= new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://tutorialsninja.com/demo/");
 	      driver.findElement(By.linkText("My Account")).click();
