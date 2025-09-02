@@ -9,16 +9,11 @@ import org.testng.asserts.SoftAssert;
 
 public class TC_RF_004_1
 {   
-	WebDriver driver=null;
-	@AfterMethod
-	public void teardown()
-	{
-		driver.quit();
-	}
+	
 	@Test
 	public void validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement()
 	{
-		 driver= new ChromeDriver();
+		  WebDriver driver= new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://tutorialsninja.com/demo/");
 	      driver.findElement(By.linkText("My Account")).click();
