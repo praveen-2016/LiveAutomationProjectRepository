@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
@@ -18,10 +19,16 @@ import utility.DateProvider;
 
 public class TC_RF_010
 {   
+	WebDriver driver=null;
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	@Test
 	public void validateRegisterAccountByProvidingInvalidEmail() throws IOException, InterruptedException
 	{
-		 WebDriver driver= new ChromeDriver();
+		  driver= new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://tutorialsninja.com/demo/");
 	      driver.findElement(By.linkText("My Account")).click();
@@ -92,7 +99,7 @@ public class TC_RF_010
 	      fileName=f.getName();
 	      imageComparisons(fileName, "expectedScreenshot3.png", cleaned);
 	      softassert.assertAll();
-	      driver.quit();
+	      
 	      
 	   }
     public void imageComparisons(String actualFileImage, String expectedFileImage, String difffilepath) throws IOException

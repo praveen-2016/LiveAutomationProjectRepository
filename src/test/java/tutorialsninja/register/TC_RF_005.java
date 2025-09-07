@@ -4,17 +4,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import utility.DateProvider;
 
 public class TC_RF_005 
-{
+{   
+	WebDriver driver=null;
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	@Test
 	public void registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionYesValidation()
 	{
-		  WebDriver driver= new ChromeDriver();
+		  driver= new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://tutorialsninja.com/demo/");
 	      driver.findElement(By.linkText("My Account")).click();
@@ -45,7 +52,7 @@ public class TC_RF_005
 	      driver.findElement(By.linkText("Logout")).click();	
 	      driver.findElement(By.linkText("Continue")).click();
 	      softassert.assertAll();
-	      driver.close();	
+	    
 	}
 
 }

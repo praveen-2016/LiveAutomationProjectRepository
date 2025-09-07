@@ -6,15 +6,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 
 public class TC_RF_016 
 {   
+	WebDriver driver=null;
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	@Test
 	public void verifySpaceIsNotAllowedInRegisterAccountPafeFields()
 	{
-		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://tutorialsninja.com/demo/");
 		Actions action=new Actions(driver);
@@ -46,7 +53,7 @@ Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-lastname']/f
 Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-email']/following-sibling::div")).getText(), "E-Mail Address does not appear to be valid!");
 Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).getText(), "Telephone must be between 3 and 32 characters!");
 Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div")).getText(), "Password must be between 4 and 20 characters!");
-driver.quit();
+
 	}
 
 }

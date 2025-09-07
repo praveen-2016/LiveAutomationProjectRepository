@@ -3,16 +3,24 @@ package tutorialsninja.register;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class TC_RF_004_1
-{   
+{  
+	
+	WebDriver driver=null;
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	
 	@Test
 	public void validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement()
 	{
-		  WebDriver driver= new ChromeDriver();
+		  driver= new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://tutorialsninja.com/demo/");
 	      driver.findElement(By.linkText("My Account")).click();
@@ -34,7 +42,7 @@ public class TC_RF_004_1
 	      softAssert.assertEquals(driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div")).getText(), passwordWarning);
 	      driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
 	      softAssert.assertAll();
-	      driver.close();
+	    
 	      
 	      
 	}

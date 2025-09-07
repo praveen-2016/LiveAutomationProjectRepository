@@ -3,14 +3,21 @@ package tutorialsninja.register;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.asserts.SoftAssert;
 
 
 public class TC_RF_009
-{
+{  
+	WebDriver driver=null;
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	public void validateMessageOnProvidingAlreadyRegisteredEmailID()
 	{
-		  WebDriver driver= new ChromeDriver();
+		  driver= new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://tutorialsninja.com/demo/");
 	      driver.findElement(By.linkText("My Account")).click();
@@ -29,7 +36,7 @@ public class TC_RF_009
 	      String str1=driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText();
 	      softassert.assertEquals(str1, "Warning: E-Mail Address is already registered!");
 	      softassert.assertAll();     
-	      driver.close();
+	     
 	}
 
 }

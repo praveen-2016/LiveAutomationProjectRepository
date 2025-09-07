@@ -3,16 +3,22 @@ package tutorialsninja.register;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.asserts.SoftAssert;
 
 import utility.DateProvider;
 
 public class TC_RF_008 
 {
-	
+	WebDriver driver=null;
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 	public void validatePasswordMatchConfirmationOnRegisterationPage()
 	{
-		  WebDriver driver= new ChromeDriver();
+		  driver= new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://tutorialsninja.com/demo/");
 	      driver.findElement(By.linkText("My Account")).click();
@@ -32,7 +38,7 @@ public class TC_RF_008
 	      driver.findElement(By.xpath("//input[@type='submit'][@value='Continue']")).click();
 	      softassert.assertTrue(driver.findElement(By.xpath("//input[@id='input-confirm']/following-sibling::div")).getText().contains("Password confirmation does not match password!"));
 	      softassert.assertAll();
-	      driver.close();	
+	      	
 
 	}
 

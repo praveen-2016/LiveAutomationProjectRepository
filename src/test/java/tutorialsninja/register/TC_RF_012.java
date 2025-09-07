@@ -6,16 +6,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import utility.DateProvider;
 
 public class TC_RF_012 
-{   @Test
+{   WebDriver driver=null;
+@AfterMethod
+public void tearDown()
+{
+	driver.quit();
+}
+	@Test
 	public void registerAccountUsingKeyboardKeys()
 	{
-		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://tutorialsninja.com/demo/");
 		Actions action=new Actions(driver);
@@ -54,7 +61,7 @@ public class TC_RF_012
 	       action.click(driver.findElement(By.linkText("Logout"))).perform();
 	       action.click(driver.findElement(By.linkText("Continue"))).perform();
 	       softassert.assertAll();
-	       driver.quit();
+	      
 		
 	}
 

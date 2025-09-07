@@ -97,7 +97,6 @@ public class TC_RF_018_1
 		     softAssert.assertEquals(driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).getText(), "Telephone must be between 3 and 32 characters!");
 		     softAssert.assertEquals(driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div")).getText(), "Password must be between 4 and 20 characters!");
 		     softAssert.assertAll(); 
-		     System.out.println("I am in Case 0");
 		      break;
 		  case 1:
 			//Form screenshot as tooltip is not being captured by inspect option
@@ -123,21 +122,18 @@ public class TC_RF_018_1
 		      String fileName=f.getName();
 		      //call to compare ActualImage with expected image
 		      imageComparisons(fileName, "expectedScreenshot4.png", cleaned);
-			  System.out.println("I am in Case 1");
-		      break; 
+			   break; 
 		  case 2:
 			  String expectedStringone="Your Account Has Been Created!";  
 		       String actualstring=driver.findElement(By.id("content")).getText();
 		       softAssert.assertTrue(actualstring.contains(expectedStringone));
 			  softAssert.assertAll(); 
-			  System.out.println("I am in Case 2");
-		      break; 
+			   break; 
 		  case 32:
 			  expectedStringone="Your Account Has Been Created!";  
 		      actualstring=driver.findElement(By.id("content")).getText();
 		      softAssert.assertTrue(actualstring.contains(expectedStringone));
 			  softAssert.assertAll();  
-			   System.out.println("I am in Case 32");
 			   break;
 		      
 		   case 33:
@@ -147,8 +143,7 @@ public class TC_RF_018_1
 			     softAssert.assertEquals(driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).getText(), "Telephone must be between 3 and 32 characters!");
 			     //softAssert.assertEquals(driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div")).getText(), "Password must be between 4 and 20 characters!");
 			     softAssert.assertAll(); 
-			      System.out.println("I am in Case 33");
-			      break; 
+			     break; 
 		  }
 	     
 	      
@@ -167,7 +162,7 @@ public class TC_RF_018_1
   // .getMarkedImage(expectedImage, actualImage);
     File diffFile = new File(System.getProperty("user.dir")+File.separator+"Evidence"+File.separator+"diff_marked"+difffilepath+".png");
     ImageIO.write(diffImg, "png", diffFile);
-    System.out.println("Marked diff saved at: " + diffFile.getAbsolutePath());
+    //System.out.println("Marked diff saved at: " + diffFile.getAbsolutePath());
     SoftAssert softAssert=new SoftAssert();
     softAssert.assertFalse(imagediff.hasDiff());
     softAssert.assertAll();
