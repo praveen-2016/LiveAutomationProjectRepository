@@ -1,51 +1,52 @@
 package tutorialsninja.register;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-import utility.DateProvider;
 
 public class TC_RF_016 
-{    WebDriver driver=null;
-	@AfterMethod
-	public void teardown()
+{   
+	@Test
+	public void verifySpaceIsNotAllowedInRegisterAccountPafeFields()
 	{
-		driver.quit();
-	}
-	@Test(dataProvider="inputdata")
-	public void verifyComplexityOfPassword(String password)
-	{
-		  driver= new ChromeDriver();
-	      driver.manage().window().maximize();
-	      driver.get("https://tutorialsninja.com/demo/");
-	      driver.findElement(By.linkText("My Account")).click();
-	      driver.findElement(By.linkText("Register")).click();
-	      String str=driver.findElement(By.xpath("//div[@id='content']/p")).getText();
-	      SoftAssert softassert = new SoftAssert();
-	      softassert.assertEquals(str, "If you already have an account with us, please login at the login page.","Validated but not matched");
-	      driver.findElement(By.id("input-firstname")).sendKeys("Praveen");
-	      driver.findElement(By.id("input-lastname")).sendKeys("Kumar11");
-	      DateProvider dp=new DateProvider();
-	      driver.findElement(By.id("input-email")).sendKeys(dp.dateProvider());
-	      driver.findElement(By.id("input-telephone")).sendKeys("124325");
-	      driver.findElement(By.id("input-password")).sendKeys(password);
-	      driver.findElement(By.id("input-confirm")).sendKeys(password);
-	      driver.findElement(By.name("agree")).click();
-	      driver.findElement(By.xpath("//input[@type='submit'][@value='Continue']")).click();
-	      String expectedString="Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets";     
-	      softassert.assertEquals(driver.findElement(By.xpath("//div[@id='content']/child::h1")).getText(),expectedString,"Not Matched the string");
-	      softassert.assertAll();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://tutorialsninja.com/demo/");
+		Actions action=new Actions(driver);
+		action.click(driver.findElement(By.linkText("My Account"))).perform();
+		action.click(driver.findElement(By.linkText("Register"))).perform();
+		action.click(driver.findElement(By.id("input-firstname"))).perform();
+	    action
+	          .sendKeys(Keys.SPACE)
+	          .sendKeys(Keys.TAB)
+	          .sendKeys(Keys.SPACE)
+	          .sendKeys(Keys.TAB)
+	          .sendKeys(Keys.SPACE)
+	          .sendKeys(Keys.TAB)
+	    	   .sendKeys(Keys.SPACE)
+	    	   .sendKeys(Keys.TAB)
+	    	   .sendKeys(Keys.SPACE)
+	    	   .sendKeys(Keys.TAB)
+	    	   .sendKeys(Keys.SPACE)
+	    	   .sendKeys(Keys.TAB)
+	    	   .sendKeys(Keys.ARROW_LEFT)
+	    	   .sendKeys(Keys.TAB)
+	    	   .sendKeys(Keys.TAB)
+	    	   .sendKeys(Keys.SPACE)
+	    	   .sendKeys(Keys.ENTER)
+	    	   .build().perform();	
 	      
-	}
-	@DataProvider(name="inputdata")
-	public Object[][] DataSupplier()
-	{
-		Object[][] obj={{"abcd"},{"Abcd1234"},{"Ab123£%"},{"12ABCD12"},{"_A345612"}};
-		return obj;
+Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div")).getText(), "First Name must be between 1 and 32 characters!");
+Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div")).getText(), "Last Name must be between 1 and 32 characters!");
+Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-email']/following-sibling::div")).getText(), "E-Mail Address does not appear to be valid!");
+Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).getText(), "Telephone must be between 3 and 32 characters!");
+Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div")).getText(), "Password must be between 4 and 20 characters!");
+driver.quit();
 	}
 
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 31 09:23:25 IST 2025</td>
+<td>Started on:</td><td>Sat Sep 06 17:39:00 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>161 seconds (161129 ms)</td>
+<tr><td>Total time:</td><td>128 seconds (128178 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,54 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword()'><b>verifyComplexityOfPassword</b><br>Test class: tutorialsninja.register.TC_RF_016<br>Parameters: abcd</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
+<td title='tutorialsninja.register.TC_RF_003.verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert()'><b>verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert</b><br>Test class: tutorialsninja.register.TC_RF_003</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1cc3acf6f9ce78286b7744fbc094b21, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\nadda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52481}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52481/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1cc3acf6f9ce78286b7744fbc094b21
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at tutorialsninja.register.TC_RF_003.verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert(TC_RF_003.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142129482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2142129482'><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1508130444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1508130444'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1cc3acf6f9ce78286b7744fbc094b21, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\nadda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52481}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52481/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1cc3acf6f9ce78286b7744fbc094b21
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at tutorialsninja.register.TC_RF_003.verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert(TC_RF_003.java:36)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -115,171 +152,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>3</td>
-<td>tutorialsninja.register.TC_RF_016@6150c3ec</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword()'><b>verifyComplexityOfPassword</b><br>Test class: tutorialsninja.register.TC_RF_016<br>Parameters: Ab123£%</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2084486251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2084486251'><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>tutorialsninja.register.TC_RF_016@6150c3ec</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword()'><b>verifyComplexityOfPassword</b><br>Test class: tutorialsninja.register.TC_RF_016<br>Parameters: 12ABCD12</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1833973673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1833973673'><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>tutorialsninja.register.TC_RF_016@6150c3ec</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword()'><b>verifyComplexityOfPassword</b><br>Test class: tutorialsninja.register.TC_RF_016<br>Parameters: Abcd1234</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1287455719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1287455719'><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>tutorialsninja.register.TC_RF_016@6150c3ec</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword()'><b>verifyComplexityOfPassword</b><br>Test class: tutorialsninja.register.TC_RF_016<br>Parameters: _A345612</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671084561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1671084561'><pre>java.lang.AssertionError: The following asserts failed:
-	Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>tutorialsninja.register.TC_RF_016@6150c3ec</td></tr>
+<td>tutorialsninja.register.TC_RF_003@22555ebf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -290,70 +163,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tutorialsninja.register.TC_RF_010.validateRegisterAccountByProvidingInvalidEmail()'><b>validateRegisterAccountByProvidingInvalidEmail</b><br>Test class: tutorialsninja.register.TC_RF_010</td>
-<td></td>
-<td>23</td>
-<td>tutorialsninja.register.TC_RF_010@1ff4931d</td></tr>
-<tr>
 <td title='tutorialsninja.register.TC_RF_005.registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionYesValidation()'><b>registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionYesValidation</b><br>Test class: tutorialsninja.register.TC_RF_005</td>
 <td></td>
-<td>5</td>
-<td>tutorialsninja.register.TC_RF_005@2aceadd4</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_015.verifySpaceIsNotAllowedInRegisterAccountPafeFields()'><b>verifySpaceIsNotAllowedInRegisterAccountPafeFields</b><br>Test class: tutorialsninja.register.TC_RF_015</td>
-<td></td>
-<td>3</td>
-<td>tutorialsninja.register.TC_RF_015@24aed80c</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_007.validateDifferentWaysOfNavigatingToRegisterPage()'><b>validateDifferentWaysOfNavigatingToRegisterPage</b><br>Test class: tutorialsninja.register.TC_RF_007</td>
-<td></td>
-<td>7</td>
-<td>tutorialsninja.register.TC_RF_007@22ff4249</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_003.verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert()'><b>verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert</b><br>Test class: tutorialsninja.register.TC_RF_003</td>
-<td></td>
-<td>10</td>
-<td>tutorialsninja.register.TC_RF_003@752325ad</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_014.verifyAshtricMandatoryOnRegisterAccountFields()'><b>verifyAshtricMandatoryOnRegisterAccountFields</b><br>Test class: tutorialsninja.register.TC_RF_014</td>
-<td></td>
-<td>3</td>
-<td>tutorialsninja.register.TC_RF_014@2a5c8d3f</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_004_1.validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement()'><b>validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement</b><br>Test class: tutorialsninja.register.TC_RF_004_1</td>
-<td></td>
-<td>4</td>
-<td>tutorialsninja.register.TC_RF_004_1@279fedbd</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_002.amazonInGetPasscodefromGmail()'><b>amazonInGetPasscodefromGmail</b><br>Test class: tutorialsninja.register.TC_RF_002</td>
-<td></td>
-<td>56</td>
-<td>tutorialsninja.register.TC_RF_002@45c7e403</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_001.verifyRegisteringAccountWithMandatoryFields()'><b>verifyRegisteringAccountWithMandatoryFields</b><br>Test class: tutorialsninja.register.TC_RF_001</td>
-<td></td>
-<td>5</td>
-<td>tutorialsninja.register.TC_RF_001@2925bf5b</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_013.verifyPlaceholderValuesOnRegisterAccountPage()'><b>verifyPlaceholderValuesOnRegisterAccountPage</b><br>Test class: tutorialsninja.register.TC_RF_013</td>
-<td></td>
-<td>2</td>
-<td>tutorialsninja.register.TC_RF_013@b3ca52e</td></tr>
-<tr>
-<td title='tutorialsninja.register.TC_RF_012.registerAccountUsingKeyboardKeys()'><b>registerAccountUsingKeyboardKeys</b><br>Test class: tutorialsninja.register.TC_RF_012</td>
-<td></td>
-<td>5</td>
-<td>tutorialsninja.register.TC_RF_012@710f4dc7</td></tr>
+<td>6</td>
+<td>tutorialsninja.register.TC_RF_005@c730b35</td></tr>
 <tr>
 <td title='tutorialsninja.register.TC_RF_006.registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionNovalidation()'><b>registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionNovalidation</b><br>Test class: tutorialsninja.register.TC_RF_006</td>
 <td></td>
-<td>7</td>
-<td>tutorialsninja.register.TC_RF_006@3b69e7d1</td></tr>
+<td>6</td>
+<td>tutorialsninja.register.TC_RF_006@6c6cb480</td></tr>
 <tr>
 <td title='tutorialsninja.register.TC_RF_004.validationOfAllMandatoryfieldsWarningMessages()'><b>validationOfAllMandatoryfieldsWarningMessages</b><br>Test class: tutorialsninja.register.TC_RF_004</td>
 <td></td>
 <td>3</td>
-<td>tutorialsninja.register.TC_RF_004@3a52dba3</td></tr>
+<td>tutorialsninja.register.TC_RF_004@206a70ef</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_001.verifyRegisteringAccountWithMandatoryFields()'><b>verifyRegisteringAccountWithMandatoryFields</b><br>Test class: tutorialsninja.register.TC_RF_001</td>
+<td></td>
+<td>4</td>
+<td>tutorialsninja.register.TC_RF_001@4b2bac3f</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_002.amazonInGetPasscodefromGmail()'><b>amazonInGetPasscodefromGmail</b><br>Test class: tutorialsninja.register.TC_RF_002</td>
+<td></td>
+<td>55</td>
+<td>tutorialsninja.register.TC_RF_002@38425407</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_013.verifyPlaceholderValuesOnRegisterAccountPage()'><b>verifyPlaceholderValuesOnRegisterAccountPage</b><br>Test class: tutorialsninja.register.TC_RF_013</td>
+<td></td>
+<td>3</td>
+<td>tutorialsninja.register.TC_RF_013@45752059</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_012.registerAccountUsingKeyboardKeys()'><b>registerAccountUsingKeyboardKeys</b><br>Test class: tutorialsninja.register.TC_RF_012</td>
+<td></td>
+<td>5</td>
+<td>tutorialsninja.register.TC_RF_012@4e08711f</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_016.verifySpaceIsNotAllowedInRegisterAccountPafeFields()'><b>verifySpaceIsNotAllowedInRegisterAccountPafeFields</b><br>Test class: tutorialsninja.register.TC_RF_016</td>
+<td></td>
+<td>4</td>
+<td>tutorialsninja.register.TC_RF_016@3c46e67a</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_007.validateDifferentWaysOfNavigatingToRegisterPage()'><b>validateDifferentWaysOfNavigatingToRegisterPage</b><br>Test class: tutorialsninja.register.TC_RF_007</td>
+<td></td>
+<td>6</td>
+<td>tutorialsninja.register.TC_RF_007@5bf0d49</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_004_1.validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement()'><b>validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement</b><br>Test class: tutorialsninja.register.TC_RF_004_1</td>
+<td></td>
+<td>3</td>
+<td>tutorialsninja.register.TC_RF_004_1@36ebc363</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_010.validateRegisterAccountByProvidingInvalidEmail()'><b>validateRegisterAccountByProvidingInvalidEmail</b><br>Test class: tutorialsninja.register.TC_RF_010</td>
+<td></td>
+<td>22</td>
+<td>tutorialsninja.register.TC_RF_010@bcec361</td></tr>
+<tr>
+<td title='tutorialsninja.register.TC_RF_014.verifyAshtricMandatoryOnRegisterAccountFields()'><b>verifyAshtricMandatoryOnRegisterAccountFields</b><br>Test class: tutorialsninja.register.TC_RF_014</td>
+<td></td>
+<td>2</td>
+<td>tutorialsninja.register.TC_RF_014@292b08d6</td></tr>
 </table><p>
 </body>
 </html>

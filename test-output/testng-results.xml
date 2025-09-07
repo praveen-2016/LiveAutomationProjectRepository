@@ -1,366 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="13" failed="5" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-31T09:23:25 IST" name="Suite" finished-at="2025-08-31T09:26:07 IST" duration-ms="161129">
+  <suite started-at="2025-09-07T14:21:58 IST" name="Default suite" finished-at="2025-09-07T14:22:32 IST" duration-ms="34757">
     <groups>
     </groups>
-    <test started-at="2025-08-31T09:23:25 IST" name="Test" finished-at="2025-08-31T09:26:07 IST" duration-ms="161129">
-      <class name="tutorialsninja.register.TC_RF_010">
-        <test-method signature="validateRegisterAccountByProvidingInvalidEmail()[pri:0, instance:tutorialsninja.register.TC_RF_010@1ff4931d]" started-at="2025-08-31T09:25:43 IST" name="validateRegisterAccountByProvidingInvalidEmail" finished-at="2025-08-31T09:26:07 IST" duration-ms="23383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateRegisterAccountByProvidingInvalidEmail -->
-      </class> <!-- tutorialsninja.register.TC_RF_010 -->
-      <class name="tutorialsninja.register.TC_RF_012">
-        <test-method signature="registerAccountUsingKeyboardKeys()[pri:0, instance:tutorialsninja.register.TC_RF_012@710f4dc7]" started-at="2025-08-31T09:25:37 IST" name="registerAccountUsingKeyboardKeys" finished-at="2025-08-31T09:25:43 IST" duration-ms="5871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerAccountUsingKeyboardKeys -->
-      </class> <!-- tutorialsninja.register.TC_RF_012 -->
-      <class name="tutorialsninja.register.TC_RF_001">
-        <test-method signature="verifyRegisteringAccountWithMandatoryFields()[pri:0, instance:tutorialsninja.register.TC_RF_001@2925bf5b]" started-at="2025-08-31T09:25:32 IST" name="verifyRegisteringAccountWithMandatoryFields" finished-at="2025-08-31T09:25:37 IST" duration-ms="5489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisteringAccountWithMandatoryFields -->
-      </class> <!-- tutorialsninja.register.TC_RF_001 -->
-      <class name="tutorialsninja.register.TC_RF_002">
-        <test-method signature="amazonInGetPasscodefromGmail()[pri:0, instance:tutorialsninja.register.TC_RF_002@45c7e403]" started-at="2025-08-31T09:24:35 IST" name="amazonInGetPasscodefromGmail" finished-at="2025-08-31T09:25:32 IST" duration-ms="56857" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazonInGetPasscodefromGmail -->
-      </class> <!-- tutorialsninja.register.TC_RF_002 -->
-      <class name="tutorialsninja.register.TC_RF_013">
-        <test-method signature="verifyPlaceholderValuesOnRegisterAccountPage()[pri:0, instance:tutorialsninja.register.TC_RF_013@b3ca52e]" started-at="2025-08-31T09:24:32 IST" name="verifyPlaceholderValuesOnRegisterAccountPage" finished-at="2025-08-31T09:24:35 IST" duration-ms="2869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPlaceholderValuesOnRegisterAccountPage -->
-      </class> <!-- tutorialsninja.register.TC_RF_013 -->
-      <class name="tutorialsninja.register.TC_RF_003">
-        <test-method signature="verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert()[pri:0, instance:tutorialsninja.register.TC_RF_003@752325ad]" started-at="2025-08-31T09:24:17 IST" name="verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert" finished-at="2025-08-31T09:24:27 IST" duration-ms="10591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisteringAccountWithMandatoryFieldsAndSoftAssert -->
-      </class> <!-- tutorialsninja.register.TC_RF_003 -->
-      <class name="tutorialsninja.register.TC_RF_014">
-        <test-method signature="verifyAshtricMandatoryOnRegisterAccountFields()[pri:0, instance:tutorialsninja.register.TC_RF_014@2a5c8d3f]" started-at="2025-08-31T09:24:13 IST" name="verifyAshtricMandatoryOnRegisterAccountFields" finished-at="2025-08-31T09:24:17 IST" duration-ms="3716" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAshtricMandatoryOnRegisterAccountFields -->
-      </class> <!-- tutorialsninja.register.TC_RF_014 -->
-      <class name="tutorialsninja.register.TC_RF_004">
-        <test-method signature="validationOfAllMandatoryfieldsWarningMessages()[pri:0, instance:tutorialsninja.register.TC_RF_004@3a52dba3]" started-at="2025-08-31T09:24:10 IST" name="validationOfAllMandatoryfieldsWarningMessages" finished-at="2025-08-31T09:24:13 IST" duration-ms="3161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validationOfAllMandatoryfieldsWarningMessages -->
-      </class> <!-- tutorialsninja.register.TC_RF_004 -->
-      <class name="tutorialsninja.register.TC_RF_015">
-        <test-method signature="verifySpaceIsNotAllowedInRegisterAccountPafeFields()[pri:0, instance:tutorialsninja.register.TC_RF_015@24aed80c]" started-at="2025-08-31T09:24:06 IST" name="verifySpaceIsNotAllowedInRegisterAccountPafeFields" finished-at="2025-08-31T09:24:10 IST" duration-ms="3963" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySpaceIsNotAllowedInRegisterAccountPafeFields -->
-      </class> <!-- tutorialsninja.register.TC_RF_015 -->
-      <class name="tutorialsninja.register.TC_RF_016">
-        <test-method signature="verifyComplexityOfPassword(java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:40 IST" name="verifyComplexityOfPassword" data-provider="inputdata" finished-at="2025-08-31T09:23:44 IST" duration-ms="3862" status="FAIL">
+    <test started-at="2025-09-07T14:21:58 IST" name="Default test" finished-at="2025-09-07T14:22:32 IST" duration-ms="34757">
+      <class name="tutorialsninja.register.TC_RF_018_1">
+        <test-method signature="verifyBoundaryValuesOfFieldsOnREgisterAccountPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_018_1@6771beb3]" started-at="2025-09-07T14:21:58 IST" name="verifyBoundaryValuesOfFieldsOnREgisterAccountPage" data-provider="userdata" finished-at="2025-09-07T14:22:03 IST" duration-ms="5084" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abcd]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[ ]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComplexityOfPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:44 IST" name="teardown" finished-at="2025-08-31T09:23:44 IST" duration-ms="498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyComplexityOfPassword(java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:44 IST" name="verifyComplexityOfPassword" data-provider="inputdata" finished-at="2025-08-31T09:23:48 IST" duration-ms="3666" status="FAIL">
+        </test-method> <!-- verifyBoundaryValuesOfFieldsOnREgisterAccountPage -->
+        <test-method signature="verifyBoundaryValuesOfFieldsOnREgisterAccountPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_018_1@6771beb3]" started-at="2025-09-07T14:22:03 IST" name="verifyBoundaryValuesOfFieldsOnREgisterAccountPage" data-provider="userdata" finished-at="2025-09-07T14:22:12 IST" duration-ms="9619" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Abcd1234]]>
+                <![CDATA[P]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[V]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[E]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComplexityOfPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:48 IST" name="teardown" finished-at="2025-08-31T09:23:48 IST" duration-ms="287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyComplexityOfPassword(java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:48 IST" name="verifyComplexityOfPassword" data-provider="inputdata" finished-at="2025-08-31T09:23:52 IST" duration-ms="3509" status="FAIL">
+        </test-method> <!-- verifyBoundaryValuesOfFieldsOnREgisterAccountPage -->
+        <test-method signature="verifyBoundaryValuesOfFieldsOnREgisterAccountPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_018_1@6771beb3]" started-at="2025-09-07T14:22:12 IST" name="verifyBoundaryValuesOfFieldsOnREgisterAccountPage" data-provider="userdata" finished-at="2025-09-07T14:22:18 IST" duration-ms="5399" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ab123£%]]>
+                <![CDATA[PR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CALL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[VET]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[EERT]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EERT]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComplexityOfPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:52 IST" name="teardown" finished-at="2025-08-31T09:23:52 IST" duration-ms="298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyComplexityOfPassword(java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:52 IST" name="verifyComplexityOfPassword" data-provider="inputdata" finished-at="2025-08-31T09:23:56 IST" duration-ms="3819" status="FAIL">
+        </test-method> <!-- verifyBoundaryValuesOfFieldsOnREgisterAccountPage -->
+        <test-method signature="verifyBoundaryValuesOfFieldsOnREgisterAccountPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_018_1@6771beb3]" started-at="2025-09-07T14:22:18 IST" name="verifyBoundaryValuesOfFieldsOnREgisterAccountPage" data-provider="userdata" finished-at="2025-09-07T14:22:25 IST" duration-ms="6855" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[12ABCD12]]>
+                <![CDATA[qwertyuiopasdfghjklzxcvbnm123456]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwertyuiopasdfghjklzxcvbnm123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CALL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qwertyuiopasdfghjklzxcvbnm123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[EERT1234567890oiuytr]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EERT1234567890oiuytr]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComplexityOfPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:56 IST" name="teardown" finished-at="2025-08-31T09:23:56 IST" duration-ms="275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyComplexityOfPassword(java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:23:56 IST" name="verifyComplexityOfPassword" data-provider="inputdata" finished-at="2025-08-31T09:24:00 IST" duration-ms="3733" status="FAIL">
+        </test-method> <!-- verifyBoundaryValuesOfFieldsOnREgisterAccountPage -->
+        <test-method signature="verifyBoundaryValuesOfFieldsOnREgisterAccountPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tutorialsninja.register.TC_RF_018_1@6771beb3]" started-at="2025-09-07T14:22:25 IST" name="verifyBoundaryValuesOfFieldsOnREgisterAccountPage" data-provider="userdata" finished-at="2025-09-07T14:22:32 IST" duration-ms="7734" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[_A345612]]>
+                <![CDATA[qwertyuiopasdfghjklzxcvbnm1234566]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwertyuiopasdfghjklzxcvbnm1234566]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CALL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qwertyuiopasdfghjklzxcvbnm1234566]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[EERT1234567890oiuytr4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EERT1234567890oiuytr4]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Not Matched the string expected [Password is not as per the requirements, it should be 8 characterlong and combination of digits, spacial character and alphabets] but found [Your Account Has Been Created!]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at tutorialsninja.register.TC_RF_016.verifyComplexityOfPassword(TC_RF_016.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComplexityOfPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tutorialsninja.register.TC_RF_016@6150c3ec]" started-at="2025-08-31T09:24:00 IST" name="teardown" finished-at="2025-08-31T09:24:00 IST" duration-ms="284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tutorialsninja.register.TC_RF_016 -->
-      <class name="tutorialsninja.register.TC_RF_005">
-        <test-method signature="registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionYesValidation()[pri:0, instance:tutorialsninja.register.TC_RF_005@2aceadd4]" started-at="2025-08-31T09:24:00 IST" name="registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionYesValidation" finished-at="2025-08-31T09:24:06 IST" duration-ms="5900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionYesValidation -->
-      </class> <!-- tutorialsninja.register.TC_RF_005 -->
-      <class name="tutorialsninja.register.TC_RF_006">
-        <test-method signature="registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionNovalidation()[pri:0, instance:tutorialsninja.register.TC_RF_006@3b69e7d1]" started-at="2025-08-31T09:23:33 IST" name="registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionNovalidation" finished-at="2025-08-31T09:23:40 IST" duration-ms="7179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerAccountWithAllFieldsAndYesOptionSelectionAndNewsletterSubscriptionNovalidation -->
-      </class> <!-- tutorialsninja.register.TC_RF_006 -->
-      <class name="tutorialsninja.register.TC_RF_007">
-        <test-method signature="validateDifferentWaysOfNavigatingToRegisterPage()[pri:0, instance:tutorialsninja.register.TC_RF_007@22ff4249]" started-at="2025-08-31T09:23:26 IST" name="validateDifferentWaysOfNavigatingToRegisterPage" finished-at="2025-08-31T09:23:33 IST" duration-ms="7088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDifferentWaysOfNavigatingToRegisterPage -->
-      </class> <!-- tutorialsninja.register.TC_RF_007 -->
-      <class name="tutorialsninja.register.TC_RF_004_1">
-        <test-method signature="validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement()[pri:0, instance:tutorialsninja.register.TC_RF_004_1@279fedbd]" started-at="2025-08-31T09:24:27 IST" name="validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement" finished-at="2025-08-31T09:24:32 IST" duration-ms="4735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validationOfAllMandatoryfieldsWarningMessagesWithAgreedStatement -->
-      </class> <!-- tutorialsninja.register.TC_RF_004_1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- verifyBoundaryValuesOfFieldsOnREgisterAccountPage -->
+      </class> <!-- tutorialsninja.register.TC_RF_018_1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
